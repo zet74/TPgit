@@ -1,0 +1,12 @@
+﻿using System;
+
+namespace TPgit
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}

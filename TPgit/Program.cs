@@ -14,6 +14,8 @@ namespace TPgit
                 " et est fabriqué par " + myProduct.Provider +
                 ", vient de " + myProduct.Origin +
                 " et possède l'empreinte écologique " + myProduct.EcologicalFootprint);
+
+             
         }
     }
 }

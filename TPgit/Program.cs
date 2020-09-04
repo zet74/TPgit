@@ -6,8 +6,8 @@ namespace TPgit
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
             Product myProduct = new Product(1, "Reblochon", "Fromages", "Pochat SA", "France", "A+");
+            format myFormat = new format("40cm/80cm",40,23,56);
 
             Console.WriteLine("Mon produit "+ myProduct.Name + 
                 " possède l'id " + myProduct.Id + 

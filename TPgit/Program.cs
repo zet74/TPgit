@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 
 namespace TPgit
 {
@@ -15,7 +16,12 @@ namespace TPgit
                 ", vient de " + myProduct.Origin +
                 " et possède l'empreinte écologique " + myProduct.EcologicalFootprint);
 
-             
+
+            StorageLocation Loc = new StorageLocation(1, "La Ferme", "12 route du champs", 26, 32);
+
+            Console.WriteLine("\n\n\n");
+            Console.WriteLine(Loc.distanceFromSL(14.5, 5.5, 25.5,2));
+
         }
     }
 }

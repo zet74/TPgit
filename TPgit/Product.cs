@@ -17,7 +17,7 @@ namespace TPgit
         private string color;
         private string format;
         private string quality;
-        private string manager;
+        private Manager manager;
 
         public int Id { get => id; set => id = value; }
         public string Name { get => name; set => name = value; }
@@ -29,10 +29,10 @@ namespace TPgit
         public string Color { get => color; set => color = value; }
         public string Format { get => format; set => format = value; }
         public string Quality { get => quality; set => quality = value; }
-        public string Manager { get => manager; set => manager = value; }
-        public string StorageLocation { get => storageLocation; set => storageLocation = value; }
+        public Manager Manager { get => manager; set => manager = value; }
+        
 
-        public Product(int id, string name, string category, string provider, string origin, string ecologicalFootprint)
+        public Product(int id, string name, string category, string provider, string origin, string ecologicalFootprint, Manager leManager)
         {
             Id = id;
             Name = name;
@@ -40,6 +40,7 @@ namespace TPgit
             Provider = provider;
             Origin = origin;
             EcologicalFootprint = ecologicalFootprint;
+            Manager = leManager;
         }
 
         public string displayAllAttributes()

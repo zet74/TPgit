@@ -20,14 +20,13 @@ public Manager(int id, string name, DateTime datetime)
             this.name = name;
 			this.datetime = datetime;
         }
-		public double calculateTimeHired()
+		public int calculateTimeHired()
         {
 			TimeSpan res;
 			DateTime ajd = DateTime.Now;
 			DateTime Dateembauche = this.datetime;
-			res = ajd.Subtract(Dateembauche);
-			res = String.Format("{0}:{1}:{2}", res.Days, res.Hours, res.Minutes);
-			return res;
+			
+			return ((ajd.Month - Dateembauche.Month) + 12 * (ajd.Year - Dateembauche.Year));
         }
 
        

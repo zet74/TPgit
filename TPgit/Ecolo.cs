@@ -27,16 +27,21 @@ namespace TPgit
         public void score (int EcoScore, string EcoScoreCategory)
         {
             string saisie;
-            int EcoScore;
-            int categoryA;
-            int categoryB;
-            int categoryC;
+            EcoScore = ecoScore;
+            
 
-            saisie = Console.ReadLine();
-            int EcoScore = int.Parse(saisie);
-            if (ok >= 0 && ok =< 33)
+            
+            if (EcoScore > 0 && EcoScore < 33)
             {
-
+                Console.WriteLine("Premiere Catégorie");
+            }
+            if (EcoScore > 34 && EcoScore <66)
+            {
+                Console.WriteLine("Deuxieme Catégorie");
+            }
+            if (EcoScore > 67 && EcoScore < 100)
+            {
+                Console.WriteLine("Troisieme Catégorie");
             }
 
 

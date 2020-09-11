@@ -15,7 +15,10 @@ namespace TPgit
                 ", vient de " + myProduct.Origin +
                 " et possède l'empreinte écologique " + myProduct.EcologicalFootprint);
 
-             
+            Ecolo frm = new Ecolo(1, "Ecolo", "Ecolo");
+            frm.score(1, "ecolo");
         }
+
+        
     }
 }

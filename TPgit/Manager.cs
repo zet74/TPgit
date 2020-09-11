@@ -22,7 +22,7 @@ public Manager(int id, string name, DateTime datetime)
         }
 		public int calculateTimeHired()
         {
-			TimeSpan res;
+			
 			DateTime ajd = DateTime.Now;
 			DateTime Dateembauche = this.datetime;
 			

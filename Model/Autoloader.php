@@ -13,6 +13,7 @@ class Autoloader
        $file = '.' . $file . '.php';
        if(file_exists($file))
            return require $file;
+       
    }
 
 }
